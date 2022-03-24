@@ -1,0 +1,1 @@
+USE_SSH= GIT_USER= GIT_PASS= CURRENT_BRANCH= yarn deploy

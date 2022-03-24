@@ -15,6 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'mikechesterwang', // Usually your GitHub org/user name.
   projectName: 'mikechesterwang.github.io', // Usually your repo name.
+  trailingSlash: false,
 
   presets: [
     [
