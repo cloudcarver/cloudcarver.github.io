@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mikechesterwang.github.io/blog</id>
+    <title>CTi Blog</title>
+    <updated>2022-03-24T11:35:28.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mikechesterwang.github.io/blog"/>
+    <subtitle>CTi Blog</subtitle>
+    <icon>https://mikechesterwang.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[index]]></title>
+        <id>/index</id>
+        <link href="https://mikechesterwang.github.io/blog/index"/>
+        <updated>2022-03-24T11:35:28.000Z</updated>
+        <summary type="html"><![CDATA[blog]]></summary>
+        <content type="html"><![CDATA[<p>blog</p>]]></content>
+    </entry>
+</feed>
