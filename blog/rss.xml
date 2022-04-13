@@ -4,16 +4,25 @@
         <title>CTi Blog</title>
         <link>https://mikechesterwang.github.io/blog</link>
         <description>CTi Blog</description>
-        <lastBuildDate>Thu, 07 Apr 2022 16:57:11 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Apr 2022 15:40:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[index]]></title>
+            <title><![CDATA[Index]]></title>
             <link>https://mikechesterwang.github.io/blog/index</link>
             <guid>/index</guid>
-            <pubDate>Thu, 07 Apr 2022 16:57:11 GMT</pubDate>
-            <description><![CDATA[blog]]></description>
-            <content:encoded><![CDATA[<p>blog</p>]]></content:encoded>
+            <pubDate>Wed, 13 Apr 2022 15:40:13 GMT</pubDate>
+            <description><![CDATA[Introduction to Mike Chester Wang]]></description>
+            <content:encoded><![CDATA[<p>Hello world</p>]]></content:encoded>
+            <category>mcw</category>
+        </item>
+        <item>
+            <title><![CDATA[awesome/js]]></title>
+            <link>https://mikechesterwang.github.io/blog/awesome/js</link>
+            <guid>/awesome/js</guid>
+            <pubDate>Wed, 13 Apr 2022 15:40:13 GMT</pubDate>
+            <description><![CDATA[Web SSH]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="web-ssh">Web SSH<a class="hash-link" href="#web-ssh" title="Direct link to heading">​</a></h2><p><a href="https://github.com/billchurch/webssh2" target="_blank" rel="noopener noreferrer">webssh2</a>, a ssh client in browser, built by </p><ul><li><a href="https://github.com/mscdex/ssh2" target="_blank" rel="noopener noreferrer">ssh2</a>: a ssh client and server module for node.js</li><li><a href="https://github.com/socketio/socket.io" target="_blank" rel="noopener noreferrer">socket.io</a>: realtime application server framework based on WebSocket</li><li><a href="https://github.com/xtermjs/xterm.js" target="_blank" rel="noopener noreferrer">xterm.js</a>: terminal renderer in browser</li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>

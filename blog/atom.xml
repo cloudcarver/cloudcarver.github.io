@@ -2,17 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikechesterwang.github.io/blog</id>
     <title>CTi Blog</title>
-    <updated>2022-04-07T16:57:11.000Z</updated>
+    <updated>2022-04-13T15:40:13.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikechesterwang.github.io/blog"/>
     <subtitle>CTi Blog</subtitle>
     <icon>https://mikechesterwang.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[index]]></title>
+        <title type="html"><![CDATA[Index]]></title>
         <id>/index</id>
         <link href="https://mikechesterwang.github.io/blog/index"/>
-        <updated>2022-04-07T16:57:11.000Z</updated>
-        <summary type="html"><![CDATA[blog]]></summary>
-        <content type="html"><![CDATA[<p>blog</p>]]></content>
+        <updated>2022-04-13T15:40:13.000Z</updated>
+        <summary type="html"><![CDATA[Introduction to Mike Chester Wang]]></summary>
+        <content type="html"><![CDATA[<p>Hello world</p>]]></content>
+        <author>
+            <name>Mike Wang</name>
+            <uri>https://github.com/mikechesterwang</uri>
+        </author>
+        <category label="mcw" term="mcw"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[awesome/js]]></title>
+        <id>/awesome/js</id>
+        <link href="https://mikechesterwang.github.io/blog/awesome/js"/>
+        <updated>2022-04-13T15:40:13.000Z</updated>
+        <summary type="html"><![CDATA[Web SSH]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="web-ssh">Web SSH<a class="hash-link" href="#web-ssh" title="Direct link to heading">​</a></h2><p><a href="https://github.com/billchurch/webssh2" target="_blank" rel="noopener noreferrer">webssh2</a>, a ssh client in browser, built by </p><ul><li><a href="https://github.com/mscdex/ssh2" target="_blank" rel="noopener noreferrer">ssh2</a>: a ssh client and server module for node.js</li><li><a href="https://github.com/socketio/socket.io" target="_blank" rel="noopener noreferrer">socket.io</a>: realtime application server framework based on WebSocket</li><li><a href="https://github.com/xtermjs/xterm.js" target="_blank" rel="noopener noreferrer">xterm.js</a>: terminal renderer in browser</li></ul>]]></content>
     </entry>
 </feed>
