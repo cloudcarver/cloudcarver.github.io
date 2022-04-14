@@ -1,11 +1,3 @@
----
-title: js/form
-description: Form validation
-authors: [mike]
-tags: [JavaScript]
-hide_table_of_contents: false
----
-
 Define validation rules and corresponding messages with `yup`.
 ```JavaScript
 import * as yup from "yup";
