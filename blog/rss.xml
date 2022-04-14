@@ -4,14 +4,14 @@
         <title>CTi Blog</title>
         <link>https://mikechesterwang.github.io/blog</link>
         <description>CTi Blog</description>
-        <lastBuildDate>Thu, 14 Apr 2022 14:11:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Apr 2022 14:12:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Index]]></title>
             <link>https://mikechesterwang.github.io/blog/index</link>
             <guid>/index</guid>
-            <pubDate>Thu, 14 Apr 2022 14:11:16 GMT</pubDate>
+            <pubDate>Thu, 14 Apr 2022 14:12:26 GMT</pubDate>
             <description><![CDATA[Introduction to Mike Chester Wang]]></description>
             <content:encoded><![CDATA[<p>Hello world</p>]]></content:encoded>
             <category>mcw</category>
