@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikechesterwang.github.io/blog</id>
     <title>CTi Blog</title>
-    <updated>2022-04-14T13:57:03.000Z</updated>
+    <updated>2022-04-14T14:11:16.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikechesterwang.github.io/blog"/>
     <subtitle>CTi Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Index]]></title>
         <id>/index</id>
         <link href="https://mikechesterwang.github.io/blog/index"/>
-        <updated>2022-04-14T13:57:03.000Z</updated>
+        <updated>2022-04-14T14:11:16.000Z</updated>
         <summary type="html"><![CDATA[Introduction to Mike Chester Wang]]></summary>
         <content type="html"><![CDATA[<p>Hello world</p>]]></content>
         <author>
@@ -19,31 +19,5 @@
             <uri>https://github.com/mikechesterwang</uri>
         </author>
         <category label="mcw" term="mcw"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Awesome/js]]></title>
-        <id>/awesome/js</id>
-        <link href="https://mikechesterwang.github.io/blog/awesome/js"/>
-        <updated>2022-04-14T13:57:03.000Z</updated>
-        <summary type="html"><![CDATA[Awesome JavaScript library]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="web-ssh">Web SSH<a class="hash-link" href="#web-ssh" title="Direct link to heading">​</a></h2><p><a href="https://github.com/billchurch/webssh2" target="_blank" rel="noopener noreferrer">webssh2</a>, a ssh client in browser, built by </p><ul><li><a href="https://github.com/mscdex/ssh2" target="_blank" rel="noopener noreferrer">ssh2</a>: a ssh client and server module for node.js</li><li><a href="https://github.com/socketio/socket.io" target="_blank" rel="noopener noreferrer">socket.io</a>: realtime application server framework based on WebSocket</li><li><a href="https://github.com/xtermjs/xterm.js" target="_blank" rel="noopener noreferrer">xterm.js</a>: terminal renderer in browser</li></ul>]]></content>
-        <author>
-            <name>Mike Wang</name>
-            <uri>https://github.com/mikechesterwang</uri>
-        </author>
-        <category label="JavaScript" term="JavaScript"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[js/form]]></title>
-        <id>/js/form</id>
-        <link href="https://mikechesterwang.github.io/blog/js/form"/>
-        <updated>2022-04-14T13:57:03.000Z</updated>
-        <summary type="html"><![CDATA[Form validation]]></summary>
-        <content type="html"><![CDATA[<p>Define validation rules and corresponding messages with <code>yup</code>.</p><div class="codeBlockContainer_I0IT language-JavaScript theme-code-block"><div class="codeBlockContent_wNvx JavaScript"><pre tabindex="0" class="prism-code language-JavaScript codeBlock_jd64 thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_mRuA"><span class="token-line" style="color:#393A34"><span class="token plain">import * as yup from "yup";</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">const schema = yup.object().shape({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    email: yup.string().email("Invalid email").required("Email is required"),</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    password: yup.string().required("Password is required"),</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    confirmPassword: yup.string().required("Confirm password")</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        .test("pwd-match", "Passwords must match", function(value) =&gt; {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            return this.parent.password === value;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        })</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">})</span><br></span></code></pre><button type="button" aria-label="Copy code to clipboard" class="copyButton_wuS7 clean-btn">Copy</button></div></div><p>Resolve <code>yup</code> schema and make it a react hook state with <code>@hookform/resolvers</code>.</p><div class="codeBlockContainer_I0IT language-JavaScript theme-code-block"><div class="codeBlockContent_wNvx JavaScript"><pre tabindex="0" class="prism-code language-JavaScript codeBlock_jd64 thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_mRuA"><span class="token-line" style="color:#393A34"><span class="token plain">import { yupResolver } from '@hookform/resolvers/yup';</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export default function Index(props){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    const {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        register, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        handleSubmit, </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        handleSubmit,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        formState: {errors}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    } = useForm({</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        mode: "all",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        resolver: yupResolver(schema)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    })</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return (&lt;&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;/&gt;)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><button type="button" aria-label="Copy code to clipboard" class="copyButton_wuS7 clean-btn">Copy</button></div></div><p>Register form component to the form.</p><div class="codeBlockContainer_I0IT language-JavaScript theme-code-block"><div class="codeBlockContent_wNvx JavaScript"><pre tabindex="0" class="prism-code language-JavaScript codeBlock_jd64 thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_mRuA"><span class="token-line" style="color:#393A34"><span class="token plain">import {TextField} from "@mui/material";</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export default function Index(props){</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    const onSubmit = (data) =&gt; console.log("form: " + data);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return (&lt;&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;form onSubmit={handleSubmit(onSubmit)}&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            &lt;TextField</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                label="Email"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                {...register("email")}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                error={errors.email?.message? true : false}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                helperText={errors.email?.message}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            /&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &lt;/form&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;/&gt;)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><button type="button" aria-label="Copy code to clipboard" class="copyButton_wuS7 clean-btn">Copy</button></div></div>]]></content>
-        <author>
-            <name>Mike Wang</name>
-            <uri>https://github.com/mikechesterwang</uri>
-        </author>
-        <category label="JavaScript" term="JavaScript"/>
     </entry>
 </feed>

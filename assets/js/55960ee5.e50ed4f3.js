@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikechesterwang_github_io=self.webpackChunkmikechesterwang_github_io||[]).push([[121],{8070:function(e){e.exports=JSON.parse('[{"name":"JavaScript","permalink":"/docs/tags/java-script","count":1}]')}}]);

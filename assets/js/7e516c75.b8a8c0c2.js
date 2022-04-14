@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikechesterwang_github_io=self.webpackChunkmikechesterwang_github_io||[]).push([[922],{8573:function(e){e.exports=JSON.parse('{"name":"JavaScript","permalink":"/docs/tags/java-script","docs":[{"id":"awesome/js","title":"Awesome/js","description":"Awesome JavaScript library","permalink":"/docs/awesome/js"}],"allTagsPath":"/docs/tags"}')}}]);
