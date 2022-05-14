@@ -1,6 +1,6 @@
-## Makefile
+# Makefile
 
-### Get go version in makefile
+## Get go version in makefile
 ```makefile
 GO_VERSION := $(shell echo `go version | sed 's|.*\(1\.[0-9][0-9]\).*$$|\1|'`)
 ```
@@ -11,7 +11,7 @@ Using `\(xxx\)` to wrap the content you want to find in a string, `sed` would kn
 **escape dollar**
 `$` is a keyword in makefile, using `$$` instead
 
-### Function
+## Function
 A function can be called like
 ```makefile
 $(call func,param1,param2)
