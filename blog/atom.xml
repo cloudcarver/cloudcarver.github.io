@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikechesterwang.github.io/blog</id>
     <title>CTi Blog</title>
-    <updated>2022-05-13T16:50:03.000Z</updated>
+    <updated>2022-05-14T08:30:25.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikechesterwang.github.io/blog"/>
     <subtitle>CTi Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Index]]></title>
         <id>/index</id>
         <link href="https://mikechesterwang.github.io/blog/index"/>
-        <updated>2022-05-13T16:50:03.000Z</updated>
+        <updated>2022-05-14T08:30:25.000Z</updated>
         <summary type="html"><![CDATA[Introduction to Mike Chester Wang]]></summary>
         <content type="html"><![CDATA[<p>I am Graduated from <a href="https://sustech.edu.cn/" target="_blank" rel="noopener noreferrer">SUSTech</a>, a BS in Financial Engineering.</p><h2 class="anchor anchorWithStickyNavbar_mojV" id="campus-life-in-sustech">Campus Life in SUSTech<a class="hash-link" href="#campus-life-in-sustech" title="Direct link to heading">​</a></h2><p>I stayed in Computer Science department for three years and finished all compulsory courses and almost gained enough credits to get a BS in Computer Science. My major was changed to Ocean Science and Engineering by some mistakes caused by the teaching affair office. I wrote emails to many administrators. I used to stand in front of some administrators' offices for hours to meet them in person. After one year's attempts, I moved to Finance Department and gain all creadits with high grades in two semesters. Meanwhile, I started a company and managaed a team to do some real projects so that I can keep my programming skills sharpe. Now I'm back to the industry and working for <a href="https://singularity-data.com/" target="_blank" rel="noopener noreferrer">Singularity Data</a> as a full stack engineer.</p>]]></content>
         <author>

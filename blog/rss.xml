@@ -4,14 +4,14 @@
         <title>CTi Blog</title>
         <link>https://mikechesterwang.github.io/blog</link>
         <description>CTi Blog</description>
-        <lastBuildDate>Fri, 13 May 2022 16:50:03 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 May 2022 08:30:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Index]]></title>
             <link>https://mikechesterwang.github.io/blog/index</link>
             <guid>/index</guid>
-            <pubDate>Fri, 13 May 2022 16:50:03 GMT</pubDate>
+            <pubDate>Sat, 14 May 2022 08:30:25 GMT</pubDate>
             <description><![CDATA[Introduction to Mike Chester Wang]]></description>
             <content:encoded><![CDATA[<p>I am Graduated from <a href="https://sustech.edu.cn/" target="_blank" rel="noopener noreferrer">SUSTech</a>, a BS in Financial Engineering.</p><h2 class="anchor anchorWithStickyNavbar_mojV" id="campus-life-in-sustech">Campus Life in SUSTech<a class="hash-link" href="#campus-life-in-sustech" title="Direct link to heading">​</a></h2><p>I stayed in Computer Science department for three years and finished all compulsory courses and almost gained enough credits to get a BS in Computer Science. My major was changed to Ocean Science and Engineering by some mistakes caused by the teaching affair office. I wrote emails to many administrators. I used to stand in front of some administrators' offices for hours to meet them in person. After one year's attempts, I moved to Finance Department and gain all creadits with high grades in two semesters. Meanwhile, I started a company and managaed a team to do some real projects so that I can keep my programming skills sharpe. Now I'm back to the industry and working for <a href="https://singularity-data.com/" target="_blank" rel="noopener noreferrer">Singularity Data</a> as a full stack engineer.</p>]]></content:encoded>
             <category>mcw</category>
