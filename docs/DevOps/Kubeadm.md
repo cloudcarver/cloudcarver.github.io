@@ -4,7 +4,7 @@ Setup Kubernetes 1.21 in ubuntu 20.04 with Kubeadm and crio 1.23.
 ## Script
 ### control plane (worker node script + kubeadm init)
 ```bash
-https://raw.githubusercontent.com/mikechesterwang/setup-kubeadm/main/control-plane-ubuntu20.04.sh | sudo bash
+curl -s https://raw.githubusercontent.com/mikechesterwang/setup-kubeadm/main/control-plane-ubuntu20.04.sh | sudo bash
 ```
 And then apply network model.
 e.g.
