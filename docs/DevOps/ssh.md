@@ -20,3 +20,23 @@ fi
 sudo tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'
 ```
 Note that the port should be modified if you use proxy 
+
+## Try command for several times
+```bash
+function polling() {
+    try_times=10
+    while :; do
+        echo "trying: $@"
+        if [ $try_times == 0 ]; then
+            echo "Error: timeout"
+            exit 1
+        fi
+        $@
+        if [ $? == 0 ]; then
+            break
+        fi
+        sleep 5
+        try_times=$((try_times - 1))
+    done
+}
+```
