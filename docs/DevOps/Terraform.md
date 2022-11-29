@@ -202,3 +202,58 @@ eval "$(jq -r '@sh "user=\(.user) ip=\(.ip) private_key_path=\(.private_key_path
 # Get `token` and `cert hash` for `kubeadm join`
 jq -n --arg token "$(ssh -o "StrictHostKeyChecking no" $user@$ip -i $private_key_path "sudo kubeadm token create")" --arg cert "$(ssh $user@$ip -i $private_key_path "openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'")" '{"token": $token, "cert": $cert}'
 ```
+
+### Add external-dns add-on in EKS
+```hcl
+locals {
+    external_dns_iam_role = "${var.remote_workspace}-${local.cluster_id}-external-dns"
+}
+
+resource "helm_release" "external_dns" {
+  name       = "external-dns"
+  repository = "https://kubernetes-sigs.github.io/external-dns/"
+  chart      = "external-dns"
+  namespace  = "kube-system"
+  depends_on = [
+    kubernetes_service_account.external_dns
+  ]
+
+  set {
+    name  = "serviceAccount.create"
+    value = "false"
+  }
+
+  set {
+    name  = "serviceAccount.name"
+    value = "aws-external-dns-sa"
+  }
+}
+
+module "external_dns_role" {
+  source    = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+
+  role_name = local.external_dns_iam_role
+  attach_external_dns_policy = true
+
+  oidc_providers = {
+    main = {
+      provider_arn               = local.cluster_oidc_provider_arn
+      namespace_service_accounts = ["kube-system:aws-external-dns-sa"]
+    }
+  }
+}
+
+resource "kubernetes_service_account" "external_dns" {
+  metadata {
+    name = "aws-external-dns-sa"
+    namespace = "kube-system"
+    labels = {
+        "app.kubernetes.io/name"= "aws-external-dns-sa"
+    }
+    annotations = {
+      "eks.amazonaws.com/role-arn" = module.external_dns_role.iam_role_arn
+    }
+  }
+}
+
+```
