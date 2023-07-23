@@ -154,7 +154,7 @@ This method uses `conn.CreateStream` to create a bidirection streaming channel. 
 
 To find out what kinds of stream frames will be sent from the server side, let's take a look at the Kubelet.
 
-The Kubernetes client (e.g. client go, Kubectl) alwasy send requests to the API Server. In this scenario, API server will forward the request to Kubelet. Kubelet actually returns a streaming endpoint to the client, so that the client and attach to the container. The client will use the URL to connect to the streaming endpoint of the kubelet, and the kubelet will forward the request to the container runtime. The container runtime will execute the command in the container and return the result to the kubelet, and the kubelet will forward the result to the client.
+The Kubernetes client (e.g. client go, Kubectl) alwasy send requests to the API Server. In this scenario, API server will forward the request to Kubelet. Kubelet actually acts as a proxy to forward traffic between the client and the container.
 
 ## Kubernetes Side
 How does Kubelet handle this request? Following the source code, we can quickly find the function `InstallDebuggingHandlers` in `pkg/kubelet/server/server.go`:
