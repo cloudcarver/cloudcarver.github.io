@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikechesterwang_github_io=self.webpackChunkmikechesterwang_github_io||[]).push([[734],{1867:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/mcw","name":"mcw","count":1,"permalink":"/blog/tags/mcw"}')}}]);
