@@ -205,8 +205,8 @@ services:
       XICFG_PORT: 8000
     volumes:
       - ./:/app
-      - go-data:/root/go/pkg/mod
-      - go-build-data:/root/.cache/go-build
+      - dev-go-data:/root/go/pkg/mod
+      - dev-go-build-data:/root/.cache/go-build
   db: 
     image: "postgres:latest"
     ports:
