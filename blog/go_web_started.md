@@ -98,7 +98,7 @@ type ModelInterface interface {
 This allows you to decouple the business logic from the database access code. And you can use `gomock` to mock the database access code in the unit tests. We will talk about it later in this article.
 
 
-## Dependency injection
+## Dependency Injection
 
 If you are a big fan of mocking and testing, then you will have a lot of interfaces in your code. In that case, you need to inject the implementation of the interfaces into the business logic. [wire](https://github.com/google/wire) is a good choice. What you need to do is writing constructors for the implementations and the business logic, and then `wire` will sort out the dependency graph, and generates a bulletproof initialization code for you.
 
@@ -166,7 +166,7 @@ func TestSignInService(t *testing.T) {
 
 Here, we are testing the `SignIn` method in the `SignInService`. We mock the `CreateUser` method in the `ModelInterface` and return a fake user. Then we can test the `SignIn` method with the fake user without touching the database. `gomock` can also help you to check if the method is called with the correct parameters.
 
-## Development environment
+## Development Environment
 
 Docker-compose can help you to set up a development environment where all your WSL and Mac co-workers can work with. 
 
