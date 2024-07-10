@@ -7,7 +7,7 @@ hide_table_of_contents: false
 
 **Education Background**: SUSTech (2017 - 2022), Financial Engineering, Computer Science
 
-**5+ years software development experience**
+**6+ years software development experience**
 
     1. 2018.6 - 2021.2 Independent developer. Served more than 10 customers and developed 20+ projects (Spring Boot, PHP, MySQL, React Native, Docker). Lab Assistant. Developed a high performance dynamic distributed large graph partitioning algorithm. (C++, MPI)
 
