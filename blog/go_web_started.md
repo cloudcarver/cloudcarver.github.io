@@ -105,7 +105,7 @@ If you are a big fan of mocking and testing, then you will have a lot of interfa
 For instance, you have the following components in your code:
 
 ```go
-func NewConfig() error
+func NewConfig() *Config
 
 func NewModel(cfg *config.Config) (model.ModelInterface, error)  
 
